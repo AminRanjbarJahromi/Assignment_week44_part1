@@ -2,10 +2,17 @@ package org.example;
 
 public class Person {
 
+    //field
     private int id;
     private String firstName;
     private String lastName;
     private String email;
+
+    //constructor
+    private int sequence = 15;
+    public Person(){
+        this.id = ++sequence;
+    }
 
 
     public int getId() {
