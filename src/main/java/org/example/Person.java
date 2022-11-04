@@ -9,10 +9,15 @@ public class Person {
     private String email;
 
     //constructor
-    private int sequence = 15;
-    public Person(){
+    private int sequence = 10104021;
+    public Person(String firstName, String lastName, String email, int id){
         this.id = ++sequence;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
     }
+
+    //methode
 
 
     public int getId() {
@@ -50,7 +55,7 @@ public class Person {
         this.email = email;
     }
 
-    public String personInfo(){
+    public String getSummary (){
         return " person with ID : " + id + " first name : " + firstName + " last name : " + lastName + " email address : " + email;
     }
 }
