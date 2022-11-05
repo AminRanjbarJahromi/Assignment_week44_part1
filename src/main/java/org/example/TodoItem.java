@@ -14,7 +14,7 @@ public class TodoItem {
 
     //constructor
 
-    private int sequence = 1010;
+    private int sequence = 20020;
     public TodoItem(int id){
         this.id = ++sequence;
         this.deadLine = LocalDate.of(2022,12,29);

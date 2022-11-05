@@ -9,7 +9,7 @@ public class Person {
     private String email;
 
     //constructor
-    private int sequence = 10104021;
+    private int sequence = 10010;
     public Person(String firstName, String lastName, String email, int id){
         this.id = ++sequence;
         this.firstName = firstName;
